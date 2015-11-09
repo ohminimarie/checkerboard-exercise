@@ -10,13 +10,15 @@ newDiv.style.backgroundColor = color;
 
 };
 
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
 for (var i = 1; i < 64; i++) {
-  if (i%2===0) {
-    board("red");
-  } else {
-    board("black");
-  }
+  board(getRandomColor());
 };
-
-
