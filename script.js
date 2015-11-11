@@ -34,6 +34,11 @@ function colors() {
   flash = !flash;
 };
 
+function audio() {
+  var music = new Audio('cantLieNicholasCraven.mp3')
+  music.play();
+}
 
+audio()
 checkerBoard();
 window.setInterval(colors, 500);
