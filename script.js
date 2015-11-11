@@ -37,8 +37,8 @@ function colors() {
 function audio() {
   var music = new Audio('cantLieNicholasCraven.mp3')
   music.play();
-}
+};
 
-audio()
+audio();
 checkerBoard();
 window.setInterval(colors, 500);
