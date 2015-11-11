@@ -10,15 +10,8 @@ newDiv.style.backgroundColor = color;
 
 };
 
-function getRandomColor() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
 
 for (var i = 1; i < 64; i++) {
-  board(getRandomColor());
+  board('rgb(100, 0,' + 6*i + ')');
+  board('rgb(0, 100,' + 6*i + ')');
 };
